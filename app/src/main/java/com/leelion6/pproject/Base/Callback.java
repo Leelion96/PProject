@@ -1,16 +1,16 @@
-package com.leelion6.pproject.MVP;
+package com.leelion6.pproject.Base;
 
 /**
  * Created by LiCheng
  * Date：2018/11/7
  */
-public interface MvpCallback {
+public interface Callback<T> {
 
     /**
      * 数据请求成功
      * @param data  请求到的数据
      */
-    void onSuccess(String data);
+    void onSuccess(T data);
 
     /**
      * 使用网络API接口请求方式时，无法正常返回数据
