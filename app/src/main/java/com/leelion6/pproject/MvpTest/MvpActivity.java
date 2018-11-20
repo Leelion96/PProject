@@ -19,8 +19,8 @@ public class MvpActivity extends BaseActivity implements MvpView{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mvp_test);
-        mMvpTest = findViewById(R.id.tv_mvp_test);
+
+
         //初始化presenter
         presenter = new MvpPresenter();
         presenter.attachView(this);
@@ -48,5 +48,26 @@ public class MvpActivity extends BaseActivity implements MvpView{
     protected void onDestroy() {
         super.onDestroy();
         presenter.detachView();
+    }
+
+
+    @Override
+    public void bindUI(View rootView) {
+
+    }
+
+    @Override
+    public void initView(Bundle savedInstanceState) {
+        mMvpTest = findViewById(R.id.tv_mvp_test);
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_mvp_test;
     }
 }

@@ -4,7 +4,7 @@ package com.leelion6.pproject.Base;
  * Created by LiCheng
  * Date：2018/11/7
  */
-public class BasePresenter<V extends IBaseView> {
+public class BasePresenter<V extends IView> {
 
 
     /**

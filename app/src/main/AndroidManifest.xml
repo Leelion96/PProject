@@ -3,6 +3,7 @@
     package="com.leelion6.pproject">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MvpTest.MvpActivity"></activity>
+        <activity android:name=".MvpTest.MvpActivity" />
+        <activity android:name=".Game2048.GameAcitvity" />
+        <activity android:name=".HandlerTest.HandlerActivity"></activity>
     </application>
 
 </manifest>

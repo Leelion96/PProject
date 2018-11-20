@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf8ef"
+    tools:context=".Game2048.GameAcitvity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_2048"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/t_2048"
+        android:textColor="#776e65"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="@id/line_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_best_text"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rect_r3"
+        android:paddingTop="7dp"
+        android:gravity="center_horizontal"
+        android:text="@string/t_best"
+        android:textColor="#eee4da"
+        android:textSize="12sp"
+        android:typeface="sans"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_best"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="274dp" />
+
+    <TextView
+        android:id="@+id/tv_best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingBottom="2dp"
+        android:text="3932100"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tv_best_text"
+        app:layout_constraintRight_toRightOf="@id/tv_best_text"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_score_text"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rect_r3"
+        android:gravity="center_horizontal"
+        android:paddingTop="7dp"
+        android:text="@string/t_score"
+        android:textColor="#eee4da"
+        android:textSize="12sp"
+        android:typeface="sans"
+        app:layout_constraintRight_toLeftOf="@id/tv_best_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_score"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="274dp" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingBottom="2dp"
+        android:text="3932100"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tv_score_text"
+        app:layout_constraintRight_toRightOf="@id/tv_score_text"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t_text"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_new_game"
+        app:layout_constraintLeft_toLeftOf="@id/line_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_new_game" />
+
+    <Button
+        android:id="@+id/tv_new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_r3_8f7a66"
+        android:layout_marginTop="15dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/t_new_game"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#f9f6f2"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_best_text"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

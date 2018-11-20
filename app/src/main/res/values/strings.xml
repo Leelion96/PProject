@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">PProject</string>
+
+    <!--MvpTest-->
     <string name="api_error_msg">网络请求数据出现异常</string>
+
+    <!--Game2048-->
+    <string name="t_2048">2048</string>
+    <string name="t_score">SCORE</string>
+    <string name="t_best">BEST</string>
+    <string name="t_text">Join the numbers and get to the 2048 tile!</string>
+    <string name="t_new_game">New Game</string>
 </resources>
